@@ -1,0 +1,147 @@
+/*Layout Desktop*/
+
+.contenedor {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.contenedor>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/*Nav*/
+.nav {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /*display: flex;*/
+}
+
+.nav>div {
+    display: inline block;
+
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+    width: 98%;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: right;
+    width: 98%;
+}
+
+/*Banner*/
+.banner {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+/*Cartas Columna 1*/
+
+.carta1 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.carta2 {
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+/*Carta Columna 2*/
+
+.carta3 {
+    grid-row-start: 3;
+    grid-row-end: 7;
+}
+
+/*Footer*/
+
+.footer {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+    width: 98%;
+}
+
+.item5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    width: 98%;
+
+}
+
+/*Layout Mobile*/
+
+@media screen and (max-width: 576px) {
+
+    /*Cartas Columna 1*/
+
+    .carta1 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .carta2 {
+        grid-row-start: 5;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    /*Carta Columna 2*/
+
+    .carta3 {
+        grid-row-start: 7;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    /*Footer*/
+
+    .footer {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .item4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        width: 98%;
+
+
+    }
+
+    .item5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        width: 98%;
+    }
+}
