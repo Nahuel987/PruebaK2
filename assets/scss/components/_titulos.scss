@@ -1,0 +1,43 @@
+/*Ubuntu*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+
+/*Titulos carta*/
+.#{$marca}-titulo-primario{
+
+    font-size: $xxxxx-large;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.#{$marca}-titulo-secundario{
+    font-size: $xxxx-large;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.#{$marca}-parrafo{
+
+    font-size: $xx-large;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+/*Titulos nav-footer*/
+
+.#{$marca}-titulo-nav{
+
+    font-size: $large;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.#{$marca}-titulo-nav{
+
+    font-size: $medium;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}

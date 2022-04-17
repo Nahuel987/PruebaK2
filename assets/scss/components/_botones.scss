@@ -1,0 +1,27 @@
+/*Usando selector placeholder*/
+
+%btn{
+    
+    /*template de la clase boton*/
+    height: 70px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    margin: 5px 0;
+    box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.2);
+    &:hover{
+        cursor: pointer;
+        background-color: $withe;
+    }
+
+}
+
+/*Creando la clase btn-primario*/
+.#{$marca}-btn-primario{
+
+    @extend %btn;
+    background: $orange;
+
+}

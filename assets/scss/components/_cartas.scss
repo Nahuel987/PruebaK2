@@ -1,0 +1,119 @@
+/*Creando una carta*/
+/*Carta Uno*/
+
+.#{$marca}-cartaUno {
+
+    /*Propiedades de la carta*/
+    width: 500px;
+    padding: 0;
+
+    border: {
+        radius: 5px;
+        width: 1px;
+        style: solid;
+        color: red;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    &__cuerpo {
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 10px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            display: inline;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+
+        h3 {
+            display: inline;
+            margin-left: 3px;
+            font-size: 12px;
+        }
+    }
+}
+
+/*Carta Dos*/
+.#{$marca}-cartaDos {
+
+    width: 500px;
+    height: 100%;
+    padding: 0;
+
+    border: {
+        radius: 5px;
+        width: 1px;
+        style: solid;
+        color: green;
+
+    }
+
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 150px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    &__cuerpoUno {
+
+        div {
+            text-align: center;
+
+            img {
+                display: inline;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+    }
+
+    &__cuerpoDos {
+
+        p {
+            text-align: left;
+
+        }
+
+    }
+
+    &__cuerpoTres {
+
+        h1 {
+
+            width: 100%;
+            background-color: green;
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 50%;
+
+        }
+    }
+}

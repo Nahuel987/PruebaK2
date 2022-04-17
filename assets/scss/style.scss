@@ -1,0 +1,10 @@
+/*Orden de las importaciones
+*variables-ABSTRACTS
+*componentes-COMPONENTS
+*/
+
+@import 'abstracts/variables';
+
+@import 'components/titulos',
+        'components/carta',
+        'components/botones';
