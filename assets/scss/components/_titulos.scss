@@ -26,6 +26,14 @@
     font-weight: 400;
 }
 
+.#{$marca}-texto-lista{
+
+    font-size: $xx-large;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+}
+
 /*Titulos nav-footer*/
 
 .#{$marca}-titulo-nav{
@@ -35,7 +43,7 @@
     font-weight: 700;
 }
 
-.#{$marca}-titulo-nav{
+.#{$marca}-titulo-footer{
 
     font-size: $medium;
     font-family: 'Poppins', sans-serif;

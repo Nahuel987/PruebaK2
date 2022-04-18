@@ -3,14 +3,14 @@
 %btn{
     
     /*template de la clase boton*/
-    height: 70px;
-    width: 150px;
+    height: 30px;
+    width: 55px;
     border: none;
-    border-radius: 10px;
-    color: #fff;
+    border-radius: 5px;
+    color: $black;
     font-size: 16px;
     margin: 5px 0;
-    box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 6px 2px rgba(255, 255, 255, 0.836);
     &:hover{
         cursor: pointer;
         background-color: $withe;

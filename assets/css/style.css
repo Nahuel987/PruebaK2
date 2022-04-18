@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*Orden de las importaciones
+*variables-ABSTRACTS
+*componentes-COMPONENTS
+*/
+/*Variables Tamaños Letra*/
+/*Colores*/
+/*Ubuntu*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+/*Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap");
+/*Titulos carta*/
+.kari-titulo-primario {
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.kari-titulo-secundario {
+  font-size: 45px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.kari-parrafo {
+  font-size: 35px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.kari-texto-lista {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/*Titulos nav-footer*/
+.kari-titulo-nav {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.kari-titulo-footer {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+/*Creando una carta*/
+/*Carta Uno*/
+.kari-cartaUno {
+  /*Propiedades de la carta*/
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+.kari-cartaUno img {
+  width: 100%;
+  height: 50%;
+}
+
+.kari-cartaUno__cuerpo h1 {
+  font-size: 45px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 10px;
+}
+
+.kari-cartaUno__cuerpo p {
+  text-align: left;
+  margin: 10px;
+}
+
+.kari-cartaUno__cuerpo h2 {
+  margin: 10px;
+  text-align: left;
+}
+
+.kari-cartaUno__cuerpo i {
+  width: 90px;
+  height: 50px;
+  display: inline;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.kari-cartaUno__cuerpo h3 {
+  display: inline;
+  margin-left: 3px;
+  font-size: 30px;
+}
+
+/*Carta Dos*/
+.kari-cartaDos {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: green;
+}
+
+.kari-cartaDos img {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  border: 2px solid black;
+  margin-top: 15px;
+}
+
+.kari-cartaDos__cuerpoUno div {
+  text-align: center;
+}
+
+.kari-cartaDos__cuerpoUno div img {
+  display: inline;
+  width: 50px;
+  height: 50px;
+}
+
+.kari-cartaDos__cuerpoDos p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.kari-cartaDos__cuerpoTres h1 {
+  width: 98%;
+  background-color: #2E1503;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.kari-cartaDos__cuerpoTres li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.kari-cartaDos__cuerpoTres img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Usando selector placeholder*/
+.kari-btn-primario {
+  /*template de la clase boton*/
+  height: 30px;
+  width: 55px;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 16px;
+  margin: 5px 0;
+  -webkit-box-shadow: 2px 2px 6px 2px rgba(255, 255, 255, 0.836);
+          box-shadow: 2px 2px 6px 2px rgba(255, 255, 255, 0.836);
+}
+
+.kari-btn-primario:hover {
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+/*Creando la clase btn-primario*/
+.kari-btn-primario {
+  background: #FFA500;
+}
+/*# sourceMappingURL=style.css.map */
