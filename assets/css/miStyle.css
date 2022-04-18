@@ -5,7 +5,6 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
-    background-color: #2196F3;
 }
 
 /*Nav*/
@@ -20,7 +19,6 @@
 
 .nav>div {
     display: inline block;
-
 }
 
 .item1 {
@@ -75,6 +73,11 @@
     grid-row-end: 7;
 }
 
+.imgWeb {
+    width: 350px;
+    height: 350px;
+}
+
 /*Footer*/
 
 .footer {
@@ -83,7 +86,6 @@
     grid-column-end: 3;
     background-color: #060606;
     height: 65px;
-
 }
 
 .item4 {
@@ -97,7 +99,6 @@
 }
 
 .item5 {
-
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: center;
@@ -106,25 +107,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
-.item5 div,
-h5 {
-    margin-right: 25px;
-    display: inline;
-}
-
-.item5 input {
-    width: 100px;
-    height: 27px;
-    border-radius: 5px;
-}
-
-input:focus {
-    background-color: orange;
-}
-
 
 /*Agregando componentes*/
 
@@ -147,19 +130,63 @@ input:focus {
     height: 95vh;
     display: inline;
     text-align: center;
+}
 
+.item5 div,
+h5 {
+    margin-right: 25px;
+    display: inline;
+}
+
+.item5 input {
+    width: 100px;
+    height: 27px;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: orange;
+}
+
+/*Animacion SVG*/
+
+#raya {
+    animation: raya 10s infinite linear;
+}
+
+@keyframes raya {
+    0% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: unset;
+    }
+}
+
+#engranaje {
+    animation: girar infinite 2s linear;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+
+        transform: rotate(360deg)
+    }
 }
 
 
-
+/*Layout Mobile*/
 
 @media screen and (min-width: 576px) {
     .miHamburguesa {
         display: none;
     }
 }
-
-/*Layout Mobile*/
 
 @media screen and (max-width: 576px) {
 
@@ -189,7 +216,6 @@ input:focus {
         grid-column-start: 1;
         grid-column-end: 3;
         height: 80vh;
-
     }
 
     .carta2 {
@@ -232,7 +258,6 @@ input:focus {
     }
 
     .kari-cartaUno img {
-
         width: 100%;
     }
 
@@ -243,6 +268,19 @@ input:focus {
 
     .kari-cartaUno__cuerpo h3 {
         font-size: 15px;
+    }
+
+    .imgWeb {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contSvg {
+        text-align: center;
+    }
+
+    .kari-cartaDos__cuerpoTres li{
+        font-size: 25px;
     }
 
     /*Footer*/
@@ -281,3 +319,4 @@ input:focus {
     input {
         display: block;
     }
+}

@@ -56,7 +56,7 @@
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: white;
+  border-color: #000000;
 }
 
 .kari-cartaUno img {
@@ -105,7 +105,7 @@
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: green;
+  border-color: #000000;
 }
 
 .kari-cartaDos img {
@@ -150,10 +150,9 @@
   font-weight: 400;
 }
 
-.kari-cartaDos__cuerpoTres img {
+.kari-cartaDos__cuerpoTres div {
   width: 250px;
   height: 250px;
-  display: block;
   margin-right: auto;
   margin-left: auto;
 }
