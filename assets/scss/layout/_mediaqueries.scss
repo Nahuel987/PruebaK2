@@ -1,3 +1,4 @@
+
 /*Layout Desktop*/
 
 .contenedor {
@@ -6,57 +7,23 @@
     grid-template-columns: auto auto;
     gap: 10px;
 }
-
-/*Nav*/
-.nav {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #060606;
-    padding: 10px;
-    /*display: flex;*/
-}
-
-.nav>div {
-    display: inline block;
-}
-
-.item1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    text-align: left;
-    width: 98%;
-}
-
-.item2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: right;
-    width: 98%;
-    color: white;
-}
-
-/*Banner*/
-.banner {
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-}
-
 .fa-regular,
 .fa-solid {
     font-size: 30px;
 }
 
 /*Cartas Columna 1*/
+.kari-cartaUno img{
+margin: 0px;
 
+}
 .carta1 {
+
     display: grid;
     height: 100vh;
     grid-row-start: 3;
     grid-row-end: 5;
 }
-
 .carta2 {
     display: grid;
     height: 100vh;
@@ -78,59 +45,8 @@
     height: 350px;
 }
 
-/*Footer*/
-
-.footer {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: #060606;
-    height: 65px;
-}
-
-.item4 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 98%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.item5 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    text-align: center;
-    width: 98%;
-    color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /*Agregando componentes*/
-
-/*nav*/
-.nav-logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-}
-
-.lista li {
-    display: inline;
-    text-align: right;
-    margin-left: 15px;
-}
-
-/*Banner*/
-.banner div {
-    width: 95%;
-    height: 95vh;
-    display: inline;
-    text-align: center;
-}
 
 .item5 div,
 h5 {
@@ -235,16 +151,16 @@ input:focus {
     }
 
     .kari-cartaUno__cuerpo .kari-titulo-primario {
-        font-size: 28px;
+        font-size: $x-large;
     }
 
     .kari-cartaUno__cuerpo p {
-        font-size: 22px;
+        font-size: $large;
         text-align: justify;
     }
 
     .kari-cartaUno__cuerpo .kari-titulo-secundario {
-        font-size: 20px;
+        font-size: $large;
     }
 
     .kari-cartaDos__cuerpoDos p {
@@ -254,22 +170,31 @@ input:focus {
     }
 
     .kari-cartaDos__cuerpoUno h1 {
-        font-size: 22px;
+        font-size: $x-large;
     }
 
     .kari-cartaUno img {
         width: 100%;
-    }
-
-    .kari-cartaUno__cuerpo img {
-        width: 20px;
-        height: 20px;
+        margin-bottom: 0;
+        
     }
 
     .kari-cartaUno__cuerpo h3 {
-        font-size: 15px;
+        font-size: $medium;
     }
 
+    .kari-cartaDos__cuerpoDos .kari-parrafo{
+
+        margin-top: 15px;
+        font-size: $large;
+
+    }
+
+    .kari-cartaDos__cuerpoTres ul >li{
+
+        font-size: $large;
+    }
+    /*imagen animacion*/
     .imgWeb {
         width: 150px;
         height: 150px;

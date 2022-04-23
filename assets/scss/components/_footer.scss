@@ -1,0 +1,30 @@
+/*Footer*/
+
+.footer {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #060606;
+    height: 65px;
+}
+
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 98%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    width: 98%;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

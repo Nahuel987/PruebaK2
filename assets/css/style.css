@@ -53,6 +53,16 @@
   /*Propiedades de la carta*/
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
@@ -67,7 +77,6 @@
 .kari-cartaUno__cuerpo h1 {
   font-size: 45px;
   text-align: left;
-  padding-top: 10px;
   padding-bottom: 5px;
   margin: 10px;
 }
@@ -82,17 +91,19 @@
   text-align: left;
 }
 
-.kari-cartaUno__cuerpo i {
+.kari-cartaUno__cuerpo div {
+  margin-bottom: 5px;
+}
+
+.kari-cartaUno__cuerpo .dicp i {
   width: 90px;
   height: 50px;
   display: inline;
-  vertical-align: middle;
+  vertical-align: baseline;
   margin-left: 10px;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
-.kari-cartaUno__cuerpo h3 {
+.kari-cartaUno__cuerpo .dicp h3 {
   display: inline;
   margin-left: 3px;
   font-size: 30px;
@@ -179,5 +190,359 @@
 /*Creando la clase btn-primario*/
 .kari-btn-primario {
   background: #FFA500;
+}
+
+/*Nav*/
+.nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #060606;
+  padding: 10px;
+}
+
+.nav > div {
+  display: inline block;
+}
+
+.item1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  text-align: left;
+  width: 98%;
+}
+
+.item2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: right;
+  width: 98%;
+  color: white;
+}
+
+/*nav*/
+.nav-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.lista li {
+  display: inline;
+  text-align: right;
+  margin-left: 15px;
+}
+
+/*Footer*/
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #060606;
+  height: 65px;
+}
+
+.item4 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  width: 98%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item5 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  width: 98%;
+  color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Banner*/
+.banner {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/*Banner*/
+.banner div {
+  width: 95%;
+  height: 95vh;
+  display: inline;
+  text-align: center;
+}
+
+/*Layout Desktop*/
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.fa-regular,
+.fa-solid {
+  font-size: 30px;
+}
+
+/*Cartas Columna 1*/
+.kari-cartaUno img {
+  margin: 0px;
+}
+
+.carta1 {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.carta2 {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+/*Carta Columna 2*/
+.carta3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+.imgWeb {
+  width: 350px;
+  height: 350px;
+}
+
+/*Agregando componentes*/
+.item5 div,
+h5 {
+  margin-right: 25px;
+  display: inline;
+}
+
+.item5 input {
+  width: 100px;
+  height: 27px;
+  border-radius: 5px;
+}
+
+input:focus {
+  background-color: orange;
+}
+
+/*Animacion SVG*/
+#raya {
+  -webkit-animation: raya 10s infinite linear;
+          animation: raya 10s infinite linear;
+}
+
+@-webkit-keyframes raya {
+  0% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  100% {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+}
+
+@keyframes raya {
+  0% {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  100% {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+}
+
+#engranaje {
+  -webkit-animation: girar infinite 2s linear;
+          animation: girar infinite 2s linear;
+}
+
+@-webkit-keyframes girar {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes girar {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*Layout Mobile*/
+@media screen and (min-width: 576px) {
+  .miHamburguesa {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .lista li {
+    display: none;
+  }
+  .miHamburguesa {
+    width: 2em;
+    height: 2em;
+    fill: white;
+    margin-top: 16px;
+  }
+  .miHamburguesa:hover {
+    fill: #FFAF6D;
+  }
+  /*Cartas Columna 1*/
+  .carta1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    height: 80vh;
+  }
+  .carta2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    height: 80vh;
+  }
+  /*Carta Columna 2*/
+  .carta3 {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+    grid-row-end: 8;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 15px;
+  }
+  .kari-cartaUno__cuerpo .kari-titulo-primario {
+    font-size: 30px;
+  }
+  .kari-cartaUno__cuerpo p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .kari-cartaUno__cuerpo .kari-titulo-secundario {
+    font-size: 20px;
+  }
+  .kari-cartaDos__cuerpoDos p {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+  }
+  .kari-cartaDos__cuerpoUno h1 {
+    font-size: 30px;
+  }
+  .kari-cartaUno img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .kari-cartaUno__cuerpo h3 {
+    font-size: 16px;
+  }
+  .kari-cartaDos__cuerpoDos .kari-parrafo {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .kari-cartaDos__cuerpoTres ul > li {
+    font-size: 20px;
+  }
+  /*imagen animacion*/
+  .imgWeb {
+    width: 150px;
+    height: 150px;
+  }
+  .contSvg {
+    text-align: center;
+  }
+  .kari-cartaDos__cuerpoTres li {
+    font-size: 25px;
+  }
+  /*Footer*/
+  .footer {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100%;
+  }
+  .item4 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  .item5 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    width: 98%;
+    font-size: 20px;
+    font-size: 25px;
+  }
+  .item5 input {
+    width: 160px;
+  }
+  .item5 div,
+  h5,
+  input {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
